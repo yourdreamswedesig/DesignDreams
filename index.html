@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Dreams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+</head>
+<body>
+    <div class="container-wrapper ds-flex">
+        <div class="cursor">
+            <div class="cursor__circle cursor__circle--small"></div>
+            <div class="cursor__circle cursor__circle--large"></div>
+        </div>
+        <div class="content-wrapper ds-flex flex-direction-column">
+            <div class="logo-wrapper">
+                <img class="logo" src="./assets/images/logo.png"  alt="design-dream"/>
+            </div>
+            <div class="text-wrapper text-center mb-8">
+                <h2 class="heading text-white text-xl text-weight-semibold mb-4"> Cooking Our Website </h2>
+                <span class="gradient text-uppercase text-medium text-weight text-large">COMING SOON</span>
+            </div>
+
+            <div class="connect-with-us text-center">
+                <h4 class="heading text-white text-weight-medium mb-2 text-medium">Reach us Via</h4>
+                <div class="ds-flex">
+                    <div class="channel-wrapper mr-3">
+                        <div class="channel-img pointer-events">
+                            <img src="./assets/images/mail.png" />
+                        </div>
+                        <div class="channel-text text-small text-white mb-1" onclick="navigateToSocialChannel.bind('mail')" > Email </div>
+                    </div>
+                    <div class="channel-wrapper pointer-events mr-3 " onclick="navigateToSocialChannel.bind('linkedin')">
+                        <div class="channel-img">
+                            <img src="./assets/images/linkedin.png" />
+                        </div>
+                        <div class="channel-text text-small text-white mb-1"> Linkedin </div>
+                    </div>
+                    <div class="channel-wrapper pointer-events mr-3" onclick="navigateToSocialChannel.bind('instagram')">
+                        <div class="channel-img">
+                            <img src="./assets/images/instagram.png" />
+                        </div>
+                        <div class="channel-text text-small text-white mb-1"> Instagram </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="starsContainer" class="star-wrapper"></div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script type="module" src="./js/cursor.js"></script>
+</body>
+</html>
+
+
