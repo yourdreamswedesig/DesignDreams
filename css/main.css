@@ -17,8 +17,8 @@ position: fixed;
     border-radius: 5px ;
 }
 .channel-img{
-width: 40px;
-height: 40px;
+width: 4rem;
+height: 4rem;
 margin: .6rem 6rem 1rem 6rem;
 }
 .channel-img img{
@@ -109,8 +109,8 @@ margin: .6rem 6rem 1rem 6rem;
 }
 .star-image {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     animation: float  infinite ease-in-out, twinkle infinite ease-in-out;
   }
 
@@ -142,8 +142,17 @@ margin: .6rem 6rem 1rem 6rem;
   }
 
 
-
-
-  .pointer-events{
-    cursor: pointer;
-  }
+  @media screen and (max-width: 420px) {
+    *{
+        font-size: 31.25%;
+    }
+    .channel-img{
+        width: 4rem;
+        height: 4rem;
+        margin: .3rem 3rem .5rem 3rem;
+    }
+    .social-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
